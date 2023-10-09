@@ -1,0 +1,166 @@
+body {
+  min-height: 100vh;
+  font-size: 62.5%;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: hsl(273, 75%, 66%);
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+.card-container {
+  margin: 90px auto;
+  width: 100%;
+  max-width: 920px;
+  min-height: 70vh;
+
+  display: flex;
+
+  border: none;
+  border-radius: 1.5%;
+  background-color: white;
+}
+
+.card-image {
+  width: 50%;
+  position: relative;
+}
+
+.image-big {
+  width: 105%;
+  position: absolute;
+  top: 4rem;
+  right: 1.4rem;
+}
+
+.image-box {
+  width: 45%;
+  position: absolute;
+  top: 11.5rem;
+  right: 20.5rem;
+}
+
+.image-mobile {
+  display: none;
+}
+
+.card_textContainer {
+  width: 50%;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h1 {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.card_row {
+  font-size: 1rem;
+}
+
+.btn_question {
+  border: none;
+  background: none;
+}
+.question--active {
+  font-weight: bolder;
+  cursor: grab;
+}
+
+.question_text {
+  display: inline-block;
+  width: 22rem;
+  cursor: grab;
+}
+.question_text:hover {
+  color: orange;
+}
+.btn_question:hover {
+  cursor: grab;
+}
+
+.answer {
+  display: none;
+}
+.answer--active {
+  display: flex;
+  text-align: justify;
+  padding-right: 3rem;
+  margin-top: -1rem;
+  opacity: 65%;
+}
+
+hr {
+  opacity: 50%;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
+  opacity: 60%;
+}
+.attribution a {
+  color: white;
+  padding: 0 2px;
+}
+
+@media (max-width: 500px) {
+  .card-container {
+    max-width: 375px;
+    margin: 120px auto;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-image {
+    width: 100%;
+    position: relative;
+  }
+
+  .image-mobile {
+    display: block;
+    width: 65%;
+    position: absolute;
+    top: -9rem;
+    right: 4.2rem;
+  }
+
+  .image-desktop {
+    display: none;
+  }
+
+  .card_textContainer {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card_textContainer h1 {
+    align-self: center;
+    font-size: 1.5rem;
+  }
+  .card_faq {
+    padding: 0 1.5rem;
+  }
+
+  .card_row {
+    text-align: left;
+    font-size: 0.9rem;
+  }
+  .question_text {
+    width: 18rem;
+  }
+
+  .answer--active {
+    display: flex;
+    padding-right: 3rem;
+    margin-top: -1.2rem;
+    opacity: 60%;
+  }
+}
